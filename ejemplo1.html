@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primer ejemplo con JQuery</title>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#ocultar').click(function(){
+			    $('#p1').hide();
+			    $('#email').hide();
+			    $(this).hide();
+			    $('.palitos').hide();
+			});
+
+			$('#mostrar').click(function(){
+			    $('#p1').show();
+			    $('#ocultar').show();
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="mostrar">Mostrar</button>
+	<button id="ocultar">Ocultar</button>
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quas animi veniam enim totam dolores minus, itaque voluptatibus, labore dicta sapiente asperiores dolore necessitatibus atque saepe, aspernatur sequi iusto excepturi!</p>
+	<p class="palitos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus earum nam, quis quae vel enim magnam repudiandae, veritatis magni iusto nobis voluptate suscipit! Perspiciatis recusandae neque dolore accusantium quas itaque.</p>
+	<form action="">
+		<input type="email" id="email" required autofocus>
+		<button>Guardar Email</button>
+	</form>
+	<button class="palitos">Boton Palitos</button>
+</body>
+</html>
